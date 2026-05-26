@@ -1,0 +1,6 @@
+# variables del servidor
+.env
+# Oculta las librerías pesadas de Node
+node_modules/
+# Ocultar las claves del ESP32 (dentro de cualquier carpeta)
+**/secrets.h

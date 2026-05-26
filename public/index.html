@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>RIEGO IOT</title>
+</head>
+<body>
+    <header id="cabecera">
+        <h1>Sistema De Riego automatizado</h1>
+        <h2>Tulua, Valle del cauca</h2>
+    </header>
+    
+    <main class="dashboard">
+        <h3>Monitoreo en tiempo real</h3>
+
+        <div class="dashboard-cartas">
+
+            <div class="carta" id="cont-temperatura">
+                <h3>temperatura</h3>
+                <div id="valor-temperatura">--</div>
+            </div>
+
+            <div class="carta" id="cont-humedad">
+                <h3>humedad</h3>
+                <div id="valor-humedad">--</div>
+            </div>
+
+            <div class="carta" id="cont-bomba">
+                <h3>estado de la bomba</h3>
+                <div id="valor-bomba">--</div>
+            </div>
+              
+            <div class="carta" id="carta-manual">
+                <h3>RIEGO MANUAL</h3>
+                <button id="btn-bomba" class="btn-cambioDePantalla" onclick="cambioEstadoBomba()">pulsa para activar</button>
+            </div>
+
+        </div>
+
+       
+        <div class="control-grafico">
+        <button id="btn-grafica" class="btn-cambioDePantalla">Ver Gráfica en Tiempo Real</button>
+        </div>
+
+        <div id="contenedor-grafica" class="oculto">
+            <canvas id="miGrafica"></canvas>
+        </div>
+   
+    </main>
+   
+
+    <script src="app.js" defer></script>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Fuente importada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-color: #121212; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 800px; /* Limitamos el ancho */
+}
+
+
+.dashboard h3 {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.dashboard-cartas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas entre sí */
+}
+
+.carta {
+    background-color: #1e1e1e; 
+    padding: 20px 40px;
+    border-radius: 15px; 
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra suave */
+    border: 1px solid #333;
+    width: 160px;
+    margin-top: 10px;
+}
+
+
+.carta h3 {
+    margin-top: 0;
+    color: #00e676; 
+    font-size: 1rem;
+}
+
+.carta p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.control-grafico {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.btn-cambioDePantalla {
+    background-color: #00e676;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cambioDePantalla:hover {
+    background-color: #00c853;
+    transform: scale(1.05);
+}
+
+.oculto {
+    display: none;
+}
+
+#contenedor-grafica {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Menos margen en celulares */
+    }
+
+    .dashboard {
+        width: 100%; /* Ocupa el ancho disponibles del dispositivo */
+    }
+
+    .card {
+        width: 90%; /* Las tarjetas se estiran para aprovechar el ancho  */
+        margin-bottom: 15px; 
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducimos un poco el título principal */
+    }
+}
